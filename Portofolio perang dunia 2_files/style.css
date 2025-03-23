@@ -1,0 +1,87 @@
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+/* Animasi Fade In untuk Header */
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 5s ease-in-out;
+
+}
+
+/* TimeLine Container */
+timeline {
+    width: 80px;
+    margin: 20px;
+}
+
+/* Animasi Slide In untuk Event */
+.event {
+    display: ;
+    background: rgb(6, 6, 6);
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px ;
+    opacity: 1;
+    transform: translate(30px);
+    animation: slideIn 2s ease-out forwards;
+}
+
+/* Efek Delay untuk Setiap Event */
+.event:nth-child(1) 
+{ animation-delay: 0. 5s; }
+.event:nth-child(2)
+{ animation-delay: 1.5s; }
+.event:nth-child(3)
+{ animation-delay: 2.5s; }
+
+/* Animasi Zoom untuk Gambar */
+.event img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0s ease-in-out;
+}
+
+.event img: hover {
+    transform: scale(1. 1);
+}
+
+.event-info {
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animasi Keyframes */
+@keyframes fadeIn {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 1;
+        transform: transLateY(30px);
+    }
+    to {
+        opacity: 5;
+        transform: transLateY(0)
+    }
+}
